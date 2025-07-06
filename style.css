@@ -1,0 +1,191 @@
+/* 基本重置和全局样式 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f5f7;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #ff7300 0%, #ffb347 100%);
+    padding: 32px 0 18px 0;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+main {
+    padding: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 卡片样式 */
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    transition: transform 0.2s ease;
+}
+
+.card:active {
+    transform: scale(0.98);
+}
+
+.card-icon {
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.card-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.card-content h2 {
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+
+.card-content p {
+    font-size: 14px;
+    margin: 0;
+    color: #666;
+}
+
+/* 按钮样式 */
+.button {
+    flex-shrink: 0;
+    background-color: #f53d3d;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button.button:active {
+    background-color: #d93030;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-size: 12px;
+}
+/* ================= */
+/* 新增加的样式代码   */
+/* ================= */
+
+/* 标签页导航栏样式 */
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    gap: 36px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.tab-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px 0 24px;
+    cursor: pointer;
+    position: relative;
+    background: none;
+    border: none;
+    outline: none;
+    transition: color 0.2s;
+}
+
+.tab-link .tab-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 4px;
+    object-fit: cover;
+    background: #f8f8f8;
+    border: 1px solid #f0f0f0;
+}
+
+.tab-link span {
+    font-size: 16px;
+    color: #333;
+    margin-top: 2px;
+    font-weight: 500;
+}
+
+.tab-link.active span {
+    color: #e93b3d;
+    border-bottom: 3px solid #e93b3d;
+    padding-bottom: 2px;
+}
+
+/* 标签内容区默认隐藏 */
+.tab-content {
+    display: none;
+}
+
+/* 今日主推和常规优惠区域的标题 */
+.highlight-section h2, .regular-section h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+/* 今日主推的内容列表 */
+.deals-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.deals-list li {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 分隔两个区域的间距 */
+.regular-section {
+    margin-top: 25px;
+}
