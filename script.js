@@ -44,5 +44,43 @@ function copyToClipboard(elementSelector) {
 
 // 默认执行一次，确保页面加载时，第一个标签是激活的
 document.addEventListener('DOMContentLoaded', (event) => {
+  function renderTop(jsonPath, topDivId) {
+    fetch(jsonPath)
+      .then(res => res.json())
+      .then(data => {
+        const topDiv = document.getElementById(topDivId);
+        if (!topDiv) return;
+        // 获取当天日期
+        const now = new Date();
+        const dateStr = `${now.getMonth() + 1}月${now.getDate()}日`;
+        let html = `<div class='highlight-section'>`;
+        html += `<h2>🔥 今日主推 (${dateStr}更新)</h2>`;
+        if (!data.items || data.items.length === 0) {
+          html += `<div style='padding:12px 0 0 0;'>红包每天0点更新！点外卖先领红包！</div>`;
+        } else {
+          html += `<ul class='deals-list'>`;
+          data.items.forEach(item => {
+            html += `<li>${item}</li>`;
+          });
+          html += `</ul>`;
+        }
+        html += `</div>`;
+        topDiv.innerHTML = html;
+      });
+  }
+  function loadContent(id, url) {
+    fetch(url)
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById(id).innerHTML = html;
+        if (id === 'meituan') renderTop('meituan/top.json', 'meituan-top');
+        if (id === 'eleme') renderTop('eleme/top.json', 'eleme-top');
+        if (id === 'jingdong') renderTop('jd/top.json', 'jd-top');
+      });
+  }
+  loadContent('meituan', 'meituan/meituan.html');
+  loadContent('eleme', 'eleme/eleme.html');
+  loadContent('jingdong', 'jd/jd.html');
+  // 默认激活第一个tab
   document.querySelector('.tab-link').click();
 });
