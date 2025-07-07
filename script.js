@@ -39,7 +39,18 @@ function copyToClipboard(elementSelector) {
   document.execCommand('copy');
   document.body.removeChild(textarea);
 
-  alert('内容已复制，请打开对应的App！');
+  // 判断类型和内容
+  const type = element.getAttribute('data-type');
+  const value = element.innerText.trim();
+  if (
+    type === 'wxapp' ||
+    value.startsWith('#小程序://') ||
+    value.startsWith('mp://')
+  ) {
+    alert('内容已复制，请在任一微信中粘贴打开！');
+  } else {
+    alert('内容已复制，请打开对应的App！');
+  }
 }
 
 // 默认执行一次，确保页面加载时，第一个标签是激活的
