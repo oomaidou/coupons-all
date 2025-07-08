@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
   loadContent('meituan', 'meituan/meituan.html');
   loadContent('eleme', 'eleme/eleme.html');
-  loadContent('jingdong', 'jd/jd.html');
+  loadContent('jingdong', 'jingdong/jd.html');
   // 默认激活第一个tab
   document.querySelector('.tab-link').click();
 });

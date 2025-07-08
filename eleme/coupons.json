@@ -12,7 +12,8 @@
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥ugbEVAEK2i3￥/ HU7405"
+          "content": "￥ugbEVAEK2i3￥/ HU7405",
+          "icon": "eleme/shangou.png"
         },
         {
           "id": "eleme-2",
@@ -20,7 +21,8 @@
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥gfLoVAwYHos￥/ HU7405"
+          "content": "￥gfLoVAwYHos￥/ HU7405",
+          "icon": "eleme/shangou.png"
         },
         {
           "id": "eleme-3",
@@ -28,7 +30,8 @@
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥ZSHiVAw3eEO￥/ HU7405"
+          "content": "￥ZSHiVAw3eEO￥/ HU7405",
+          "icon": "eleme/shangou.png"
         },
         {
           "id": "eleme-4",
@@ -36,7 +39,8 @@
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥27EOVAwhoWe￥/ HU7405"
+          "content": "￥27EOVAwhoWe￥/ HU7405",
+          "icon": "eleme/shangou.png"
         },
         {
           "id": "eleme-5",
@@ -71,7 +75,8 @@
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥WtQgVAwqxb8￥/ HU7405"
+          "content": "￥WtQgVAwqxb8￥/ HU7405",
+          "icon": "eleme/shangou.png"
         },
         {
           "id": "eleme-9",
@@ -79,7 +84,8 @@
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥WIeoVAwG1kO￥/ HU7405"
+          "content": "￥WIeoVAwG1kO￥/ HU7405",
+          "icon": "eleme/shangou.png"
         },
         {
           "id": "eleme-10",
@@ -87,7 +93,8 @@
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥Vq8SVADbCaY￥/ HU7405"
+          "content": "￥Vq8SVADbCaY￥/ HU7405",
+          "icon": "eleme/shangou.png"
         },
         {
           "id": "eleme-11",
@@ -95,7 +102,8 @@
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
-          "content": "￥gBJYVADdnnt￥/ HU7405"
+          "content": "￥gBJYVADdnnt￥/ HU7405",
+          "icon": "eleme/shangou.png"
         }
       ]
     }

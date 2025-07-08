@@ -12,7 +12,8 @@
           "description": "天天更新，最高可领56元！",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/t0f689Dz"
+          "url": "http://dpurl.cn/t0f689Dz",
+          "icon": "meituan/meituan.png"
         },
         {
           "id": "meituan-2",
@@ -20,7 +21,8 @@
           "description": "天天可领，可叠加使用！",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/6Lx24cgz"
+          "url": "http://dpurl.cn/6Lx24cgz",
+          "icon": "meituan/meituan.png"
         },
         {
           "id": "meituan-3",
@@ -28,7 +30,8 @@
           "description": "每周三领-13元大红包",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/6Lx24cgz"
+          "url": "http://dpurl.cn/6Lx24cgz",
+          "icon": "meituan/meituan.png"
         },
         {
           "id": "meituan-4",
@@ -36,7 +39,8 @@
           "description": "每月18日，领18元红包！",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/rQYIJBvz"
+          "url": "http://dpurl.cn/rQYIJBvz",
+          "icon": "meituan/meituan.png"
         },
         {
           "id": "meituan-5",
@@ -44,7 +48,8 @@
           "description": "外卖也要吃好的！",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/XRF4Xkdz"
+          "url": "http://dpurl.cn/XRF4Xkdz",
+          "icon": "meituan/meituan.png"
         },
         {
           "id": "meituan-6",
@@ -52,7 +57,8 @@
           "description": "随机抽取35-35免单券！",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/IfIbgS8z"
+          "url": "http://dpurl.cn/IfIbgS8z",
+          "icon": "meituan/meituan.png"
         },
         {
           "id": "meituan-7",
@@ -60,7 +66,8 @@
           "description": "专属大额吃喝玩乐红包",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/bLfJbhjz"
+          "url": "http://dpurl.cn/bLfJbhjz",
+          "icon": "meituan/meituan.png"
         },
         {
           "id": "meituan-8",
@@ -68,7 +75,8 @@
           "description": "4.9元喝奶茶，福利超多",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/DNeWHozz"
+          "url": "http://dpurl.cn/DNeWHozz",
+          "icon": "meituan/meituan.png"
         },
         {
           "id": "meituan-9",
@@ -76,7 +84,8 @@
           "description": "每日10点爆品上新！",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/wydaNtxz"
+          "url": "http://dpurl.cn/wydaNtxz",
+          "icon": "meituan/meituan.png"
         },
         {
           "id": "meituan-10",
@@ -84,7 +93,8 @@
           "description": "复制后，打开美团App领",
           "type": "copy",
           "action": "一键复制",
-          "content": "1复制信息，去美团App http:/💰9sOWZiOTFiNGM💰"
+          "content": "1复制信息，去美团App http:/💰9sOWZiOTFiNGM💰",
+          "icon": "meituan/meituan.png"
         },
         {
           "id": "meituan-11",
@@ -92,7 +102,8 @@
           "description": "164元门票神券优惠！",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/yFQoHe0z"
+          "url": "http://dpurl.cn/yFQoHe0z",
+          "icon": "meituan/meituan.png"
         },
         {
           "id": "meituan-12",
@@ -100,7 +111,8 @@
           "description": "夏季玩水提前囤票3折起",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/XuN3o45z"
+          "url": "http://dpurl.cn/XuN3o45z",
+          "icon": "meituan/meituan.png"
         },
         {
           "id": "meituan-13",
@@ -109,7 +121,8 @@
           "type": "copy",
           "action": "一键复制",
           "content": "#小程序://美团/外卖团购特价美食酒店电影/民宿大促销/XpwQfhtLpu6Pluq",
-          "dataType": "wxapp"
+          "dataType": "wxapp",
+          "icon": "meituan/meituan.png"
         },
         {
           "id": "meituan-14",
@@ -117,7 +130,8 @@
           "description": "66元红包免费领！",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/8TppLhlz"
+          "url": "http://dpurl.cn/8TppLhlz",
+          "icon": "meituan/meituan.png"
         },
         {
           "id": "meituan-15",
@@ -125,7 +139,8 @@
           "description": "美团买药天天低价，不止5折",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/OI42IMAz"
+          "url": "http://dpurl.cn/OI42IMAz",
+          "icon": "meituan/mtmy.png"
         },
         {
           "id": "meituan-16",
@@ -133,7 +148,8 @@
           "description": "领新人百元福利",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/WLJxasvz"
+          "url": "http://dpurl.cn/WLJxasvz",
+          "icon": "meituan/meituan.png"
         },
         {
           "id": "meituan-17",
@@ -141,7 +157,8 @@
           "description": "济南本地爆品，库存有限。",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/SuYXTsqz"
+          "url": "http://dpurl.cn/SuYXTsqz",
+          "icon": "meituan/meituan.png"
         }
       ]
     }

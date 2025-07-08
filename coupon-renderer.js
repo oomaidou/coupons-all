@@ -55,8 +55,10 @@ class CouponRenderer {
    * @returns {string} HTML字符串
    */
   renderCouponCard(coupon, iconPath) {
+    // 优先使用coupon.icon，没有则用平台iconPath
+    let icon = coupon.icon ? coupon.icon : iconPath;
     let html = `<div class="card">`;
-    html += `<div class="card-icon"><img src="${iconPath}" alt="平台图标"></div>`;
+    html += `<div class="card-icon"><img src="${icon}" alt="平台图标"></div>`;
     html += `<div class="card-content">`;
     html += `<h2>${coupon.title}</h2>`;
     html += `<p>${coupon.description}</p>`;
