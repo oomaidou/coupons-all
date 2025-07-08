@@ -1,0 +1,149 @@
+{
+  "platform": "meituan",
+  "platformName": "美团",
+  "icon": "meituan/meituan.png",
+  "sections": [
+    {
+      "title": "红包专区",
+      "coupons": [
+        {
+          "id": "meituan-1",
+          "title": "美团外卖红包1",
+          "description": "天天更新，最高可领56元！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/t0f689Dz"
+        },
+        {
+          "id": "meituan-2",
+          "title": "红包天天领会场",
+          "description": "天天可领，可叠加使用！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/6Lx24cgz"
+        },
+        {
+          "id": "meituan-3",
+          "title": "美团周三外卖节",
+          "description": "每周三领-13元大红包",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/6Lx24cgz"
+        },
+        {
+          "id": "meituan-4",
+          "title": "18日神券节",
+          "description": "每月18日，领18元红包！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/rQYIJBvz"
+        },
+        {
+          "id": "meituan-5",
+          "title": "美团外卖品质店",
+          "description": "外卖也要吃好的！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/XRF4Xkdz"
+        },
+        {
+          "id": "meituan-6",
+          "title": "冰品节天天送免单",
+          "description": "随机抽取35-35免单券！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/IfIbgS8z"
+        },
+        {
+          "id": "meituan-7",
+          "title": "吃喝玩乐内部优惠",
+          "description": "专属大额吃喝玩乐红包",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/bLfJbhjz"
+        },
+        {
+          "id": "meituan-8",
+          "title": "大牌饮品商品券",
+          "description": "4.9元喝奶茶，福利超多",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/DNeWHozz"
+        },
+        {
+          "id": "meituan-9",
+          "title": "吃喝玩乐-大牌2折起",
+          "description": "每日10点爆品上新！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/wydaNtxz"
+        },
+        {
+          "id": "meituan-10",
+          "title": "3.9元购12张5元券",
+          "description": "复制后，打开美团App领",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "1复制信息，去美团App http:/💰9sOWZiOTFiNGM💰"
+        },
+        {
+          "id": "meituan-11",
+          "title": "美团景点门票",
+          "description": "164元门票神券优惠！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/yFQoHe0z"
+        },
+        {
+          "id": "meituan-12",
+          "title": "暑期水乐园门票",
+          "description": "夏季玩水提前囤票3折起",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/XuN3o45z"
+        },
+        {
+          "id": "meituan-13",
+          "title": "民宿大促销",
+          "description": "200元无门槛立减券！请复制后，在微信中粘贴使用。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "#小程序://美团/外卖团购特价美食酒店电影/民宿大促销/XpwQfhtLpu6Pluq",
+          "dataType": "wxapp"
+        },
+        {
+          "id": "meituan-14",
+          "title": "吃喝玩乐全品类好货",
+          "description": "66元红包免费领！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/8TppLhlz"
+        },
+        {
+          "id": "meituan-15",
+          "title": "美团买药",
+          "description": "美团买药天天低价，不止5折",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/OI42IMAz"
+        },
+        {
+          "id": "meituan-16",
+          "title": "美团新人专享活动",
+          "description": "领新人百元福利",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/WLJxasvz"
+        },
+        {
+          "id": "meituan-17",
+          "title": "【济南特惠】深折好货",
+          "description": "济南本地爆品，库存有限。",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/SuYXTsqz"
+        }
+      ]
+    }
+  ]
+} 

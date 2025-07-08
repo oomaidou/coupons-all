@@ -1,0 +1,44 @@
+{
+  "platform": "jingdong",
+  "platformName": "京东",
+  "icon": "jd/jd.png",
+  "sections": [
+    {
+      "title": "常规优惠",
+      "coupons": [
+        {
+          "id": "jd-1",
+          "title": "京东外卖红包",
+          "description": "每天可领，品质外卖！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://u.jd.com/264tGlv"
+        },
+        {
+          "id": "jd-2",
+          "title": "京东国贴专区",
+          "description": "京东国补，速来领取！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://u.jd.com/2gxkv3u"
+        },
+        {
+          "id": "jd-3",
+          "title": "京东百亿补贴",
+          "description": "百亿补贴，诚意拉满",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://u.jd.com/2a4solz"
+        },
+        {
+          "id": "jd-4",
+          "title": "京东超值厂货",
+          "description": "超值厂货，源头直发",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://u.jd.com/214w4l3"
+        }
+      ]
+    }
+  ]
+} 

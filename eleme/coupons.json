@@ -1,0 +1,103 @@
+{
+  "platform": "eleme",
+  "platformName": "饿了么",
+  "icon": "eleme/eleme.png",
+  "sections": [
+    {
+      "title": "红包专区",
+      "coupons": [
+        {
+          "id": "eleme-1",
+          "title": "淘宝闪购红包",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥ugbEVAEK2i3￥/ HU7405"
+        },
+        {
+          "id": "eleme-2",
+          "title": "闪购新用户首单免单",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥gfLoVAwYHos￥/ HU7405"
+        },
+        {
+          "id": "eleme-3",
+          "title": "饿了么外卖红包",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥ZSHiVAw3eEO￥/ HU7405"
+        },
+        {
+          "id": "eleme-4",
+          "title": "红包天天领会场",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥27EOVAwhoWe￥/ HU7405"
+        },
+        {
+          "id": "eleme-5",
+          "title": "饿了么超抢手",
+          "description": "复制后，在微信中粘贴使用。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "爆款单品好价:mp://ObrTyzp8cALs5pC",
+          "dataType": "wxapp"
+        },
+        {
+          "id": "eleme-6",
+          "title": "天天膨胀18.8元",
+          "description": "复制后，在微信中粘贴使用。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "18.8极限爆涨:mp://jwUtzzjQYH0eK4q",
+          "dataType": "wxapp"
+        },
+        {
+          "id": "eleme-7",
+          "title": "囤券券真省钱",
+          "description": "复制后，在微信中粘贴使用。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "囤券券真省钱，过期自动退:mp://nNbu4fyHbgfyydJ",
+          "dataType": "wxapp"
+        },
+        {
+          "id": "eleme-8",
+          "title": "淘宝闪购-超抢手",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥WtQgVAwqxb8￥/ HU7405"
+        },
+        {
+          "id": "eleme-9",
+          "title": "社群限量福利",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥WIeoVAwG1kO￥/ HU7405"
+        },
+        {
+          "id": "eleme-10",
+          "title": "全国超市便利活动",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥Vq8SVADbCaY￥/ HU7405"
+        },
+        {
+          "id": "eleme-11",
+          "title": "医药全国门店活动",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥gBJYVADdnnt￥/ HU7405"
+        }
+      ]
+    }
+  ]
+} 
