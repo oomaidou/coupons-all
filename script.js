@@ -53,6 +53,42 @@ function copyToClipboard(elementSelector) {
   }
 }
 
+function renderShenghuoCoupons() {
+  fetch('shenghuo/coupons.json')
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById('shenghuo-coupons');
+      if (!container) return;
+      let html = '';
+      (data.sections || []).forEach(section => {
+        html += `<div class='regular-section'>`;
+        html += `<h2>${section.title}</h2>`;
+        (section.coupons || []).forEach(item => {
+          html += `<div class='card'>`;
+          html += `<div class='card-icon'>`;
+          if (item.icon) html += `<img src='${item.icon}' alt='${item.title}'>`;
+          html += `</div>`;
+          html += `<div class='card-content'>`;
+          html += `<h2>${item.title}</h2>`;
+          if (item.description) html += `<p>${item.description}</p>`;
+          html += `</div>`;
+          if (item.type === 'link') {
+            html += `<a href='${item.url}' target='_blank' class='button'>${item.action || '立即领取'}</a>`;
+          } else if (item.type === 'copy') {
+            // 复制型优惠
+            const dataType = item.dataType ? ` data-type='${item.dataType}'` : '';
+            const spanId = `shenghuo-copy-${item.id}`;
+            html += `<span id='${spanId}' style='display:none'${dataType}>${item.content || ''}</span>`;
+            html += `<button class='button' onclick="copyToClipboard('#${spanId}')">${item.action || '一键复制'}</button>`;
+          }
+          html += `</div>`;
+        });
+        html += `</div>`;
+      });
+      container.innerHTML = html;
+    });
+}
+
 // 默认执行一次，确保页面加载时，第一个标签是激活的
 document.addEventListener('DOMContentLoaded', (event) => {
   function renderTop(jsonPath, topDivId) {
@@ -87,11 +123,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
         if (id === 'meituan') renderTop('meituan/top.json', 'meituan-top');
         if (id === 'eleme') renderTop('eleme/top.json', 'eleme-top');
         if (id === 'jingdong') renderTop('jd/top.json', 'jd-top');
+        if (id === 'shenghuo') {
+          renderTop('shenghuo/top.json', 'shenghuo-top');
+          renderShenghuoCoupons();
+        }
       });
   }
   loadContent('meituan', 'meituan/meituan.html');
   loadContent('eleme', 'eleme/eleme.html');
   loadContent('jingdong', 'jingdong/jd.html');
+  loadContent('shenghuo', 'shenghuo/shenghuo.html');
   // 默认激活第一个tab
   document.querySelector('.tab-link').click();
 });

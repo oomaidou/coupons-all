@@ -1,0 +1,81 @@
+{
+  "platform": "shenghuo",
+  "platformName": "生活服务",
+  "icon": "shenghuo/shenghuo.jpeg",
+  "sections": [
+    {
+      "title": "寄快递",
+      "coupons": [
+        {
+          "id": "kuaidi-1",
+          "title": "全国上门取件，低至5元下单",
+          "description": "",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://qf.jfshou.cn/unions//link/x1Li7qM0IdmWo7Z8hsADDpJwCba3Iy",
+          "icon": "shenghuo/kuaidi.png"
+        }
+      ]
+    },
+    {
+      "title": "打车优惠",
+      "coupons": [
+        {
+          "id": "didi-1",
+          "title": "滴滴打车券",
+          "description": "出行大礼包,全员免费领",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://vv.didi.cn/305kJAl?source_id=OPEN_CPS_PLATFORM,224720269452&ref_from=dunion",
+          "icon": "shenghuo/didi.png"
+        },
+        {
+          "id": "huaxiaozhu-1",
+          "title": "花小猪打车",
+          "description": "首单立减10元",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://qf.jfshou.cn/unions//link/GIvGlQrV133gbeT8JXYvbSWHMmVkPw",
+          "icon": "shenghuo/huaxiaozhu.jpeg"
+        },
+        {
+          "id": "t3-1",
+          "title": "T3出行券",
+          "description": "超值券包天天领！",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://qf.jfshou.cn/unions//link/1ZfmbPKbD70BsMpNMAeOuNx4R6xl6k",
+          "icon": "shenghuo/t3.png"
+        }
+      ]
+    },
+    {
+      "title": "电影票",
+      "coupons": [
+        {
+          "id": "movie-1",
+          "title": "电影票优惠",
+          "description": "看电影超省钱，全国通用",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://qf.jfshou.cn/unions//link/rkxPki6u3WbLVDTO4wPU3QgJNbhISd",
+          "icon": "shenghuo/movie.png"
+        }
+      ]
+    },
+    {
+      "title": "大牌点餐",
+      "coupons": [
+        {
+          "id": "food-1",
+          "title": "大牌点餐优惠",
+          "description": "麦当劳、肯德基、星巴克...",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://qf.jfshou.cn/unions//link/vKxnHPsJIm5zhmgO3RIKQuReoivdYQ",
+          "icon": "shenghuo/food.png"
+        }
+      ]
+    }
+  ]
+} 

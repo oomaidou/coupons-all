@@ -117,20 +117,24 @@ footer {
     position: sticky;
     top: 0;
     z-index: 99;
+    overflow-x: visible;
+    padding: 0;
 }
 
 .tab-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 24px 0 24px;
-    cursor: pointer;
-    position: relative;
-    background: none;
-    border: none;
-    outline: none;
-    transition: color 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  min-width: 60px;
+  padding: 10px 12px 0 12px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s;
 }
 
 .tab-link .tab-icon {
@@ -144,10 +148,11 @@ footer {
 }
 
 .tab-link span {
-    font-size: 16px;
+    font-size: 14px;
     color: #333;
     margin-top: 2px;
     font-weight: 500;
+    line-height: 1.1;
 }
 
 .tab-link.active span {
@@ -190,4 +195,21 @@ footer {
 /* 分隔两个区域的间距 */
 .regular-section {
     margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+    .tabs {
+        justify-content: flex-start;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        gap: 8px;
+        padding: 0 2px;
+    }
+    .tab-link .tab-icon {
+        width: 32px;
+        height: 32px;
+    }
+    .tab-link span {
+        font-size: 12px;
+    }
 }
