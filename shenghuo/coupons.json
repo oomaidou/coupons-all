@@ -8,11 +8,11 @@
       "coupons": [
         {
           "id": "kuaidi-1",
-          "title": "全国上门取件，低至5元下单",
-          "description": "",
+          "title": "特价寄快递",
+          "description": "全国上门取件，低至5元下单",
           "type": "link",
           "action": "立即领取",
-          "url": "https://qf.jfshou.cn/unions//link/x1Li7qM0IdmWo7Z8hsADDpJwCba3Iy",
+          "url": "https://qf.jfshou.cn/unions//link/xLi17qM0Idmwo7Z8hsADDpJwCba3Iy",
           "icon": "shenghuo/kuaidi.png"
         }
       ]

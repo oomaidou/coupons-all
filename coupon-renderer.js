@@ -4,7 +4,7 @@
 
 class CouponRenderer {
   constructor() {
-    this.platforms = ['meituan', 'eleme', 'jingdong'];
+    this.platforms = ['meituan', 'eleme', 'jingdong', 'shenghuo'];
   }
 
   /**
@@ -27,13 +27,16 @@ class CouponRenderer {
       // 渲染各个区域
       data.sections.forEach(section => {
         html += `<div class="regular-section">`;
-        html += `<h2>${section.title}</h2>`;
-        
+        // 红包专区小号提示，仅美团、饿了么、京东
+        if (section.title === '红包专区' && ['meituan', 'eleme', 'jingdong'].includes(platform)) {
+          html += `<h2>${section.title}<span class="hint">（红包每天0点更新！）</span></h2>`;
+        } else {
+          html += `<h2>${section.title}</h2>`;
+        }
         // 渲染该区域的所有优惠券
         section.coupons.forEach(coupon => {
           html += this.renderCouponCard(coupon, data.icon);
         });
-        
         html += `</div>`;
       });
       
@@ -102,7 +105,7 @@ class CouponRenderer {
       html += `<h2>🔥 今日主推 (${dateStr}更新)</h2>`;
       
       if (!data.items || data.items.length === 0) {
-        html += `<div style='padding:12px 0 0 0;'>红包每天0点更新！点外卖先领红包！</div>`;
+        // 不再显示任何提示
       } else {
         html += `<ul class='deals-list'>`;
         data.items.forEach(item => {

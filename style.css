@@ -65,12 +65,12 @@ main {
 }
 
 .card-content h2 {
-    font-size: 16px;
+    font-size: 13px;
     margin: 0 0 5px;
 }
 
 .card-content p {
-    font-size: 14px;
+    font-size: 12px;
     margin: 0;
     color: #666;
 }
@@ -197,6 +197,20 @@ footer {
     margin-top: 25px;
 }
 
+.section-tip {
+  font-size: 12px;
+  color: #999;
+  font-weight: normal;
+  margin-left: 4px;
+}
+
+.hint {
+  color: #999;
+  font-size: 12px;
+  margin-left: 6px;
+  font-weight: normal;
+}
+
 @media (max-width: 600px) {
     .tabs {
         justify-content: flex-start;
@@ -211,5 +225,14 @@ footer {
     }
     .tab-link span {
         font-size: 12px;
+    }
+    .card-content h2 {
+        font-size: 12px;
+    }
+    .card-content p {
+        font-size: 11px;
+    }
+    .section-tip {
+      font-size: 11px;
     }
 }

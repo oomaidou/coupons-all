@@ -4,7 +4,7 @@
   "icon": "jingdong/jd.png",
   "sections": [
     {
-      "title": "常规优惠",
+      "title": "红包专区",
       "coupons": [
         {
           "id": "jd-1",
