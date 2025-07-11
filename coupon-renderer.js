@@ -78,7 +78,7 @@ class CouponRenderer {
     if (coupon.type === 'link') {
       html += `<a href="${coupon.url}" target="_blank" class="button">${coupon.action}</a>`;
     } else if (coupon.type === 'copy') {
-      html += `<button class="button" onclick="copyToClipboard('#${coupon.id}')">${coupon.action}</button>`;
+      html += `<button class="button" data-copy-id="${coupon.id}">${coupon.action}</button>`;
     }
     
     html += `</div>`;
