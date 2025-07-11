@@ -194,7 +194,7 @@ footer {
 
 /* 分隔两个区域的间距 */
 .regular-section {
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 .section-tip {
@@ -227,12 +227,15 @@ footer {
         font-size: 12px;
     }
     .card-content h2 {
-        font-size: 12px;
+        font-size: 14px;
     }
     .card-content p {
         font-size: 11px;
     }
     .section-tip {
       font-size: 11px;
+    }
+    .regular-section {
+      margin-top: 3px !important;
     }
 }

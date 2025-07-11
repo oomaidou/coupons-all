@@ -94,29 +94,24 @@ class CouponRenderer {
     try {
       const response = await fetch(jsonPath);
       const data = await response.json();
-      
       const topDiv = document.getElementById(topDivId);
       if (!topDiv) return;
-      
+      // 如果没有主推内容，直接隐藏区域
+      if (!data.items || data.items.length === 0) {
+        topDiv.innerHTML = '';
+        return;
+      }
       const now = new Date();
       const dateStr = `${now.getMonth() + 1}月${now.getDate()}日`;
-      
       let html = `<div class='highlight-section'>`;
       html += `<h2>🔥 今日主推 (${dateStr}更新)</h2>`;
-      
-      if (!data.items || data.items.length === 0) {
-        // 不再显示任何提示
-      } else {
-        html += `<ul class='deals-list'>`;
-        data.items.forEach(item => {
-          html += `<li>${item}</li>`;
-        });
-        html += `</ul>`;
-      }
-      
+      html += `<ul class='deals-list'>`;
+      data.items.forEach(item => {
+        html += `<li>${item}</li>`;
+      });
+      html += `</ul>`;
       html += `</div>`;
       topDiv.innerHTML = html;
-      
     } catch (error) {
       console.error('加载今日主推数据失败:', error);
     }
