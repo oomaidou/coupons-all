@@ -26,7 +26,7 @@ header p {
 }
 
 main {
-    padding: 15px;
+    padding: 2px;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -209,6 +209,15 @@ footer {
   font-size: 12px;
   margin-left: 6px;
   font-weight: normal;
+}
+
+.platform-block > *:first-child {
+  margin-top: 3px !important;
+}
+
+.regular-section,
+.highlight-section {
+  padding-left: 10px;
 }
 
 @media (max-width: 600px) {
