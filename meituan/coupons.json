@@ -80,6 +80,15 @@
         },
         {
           "id": "meituan-9",
+          "title": "9.9购600神券包",
+          "description": "复制后，打开美团App领",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "1 %复制信息#% 打开团App http:/💰geNzcwYTY5NjU💰领",
+          "icon": "meituan/meituan.png"
+        },
+        {
+          "id": "meituan-10",
           "title": "吃喝玩乐内部优惠",
           "description": "专属大额吃喝玩乐红包",
           "type": "link",
@@ -88,23 +97,14 @@
           "icon": "meituan/mtlogo.png"
         },        
         {
-          "id": "meituan-10",
+          "id": "meituan-11",
           "title": "吃喝玩乐-大牌2折起",
           "description": "每日10点爆品上新！",
           "type": "link",
           "action": "立即领取",
           "url": "http://dpurl.cn/wydaNtxz",
           "icon": "meituan/mtlogo.png"
-        },
-        {
-          "id": "meituan-11",
-          "title": "9.9购600神券包",
-          "description": "复制后，打开美团App领",
-          "type": "copy",
-          "action": "一键复制",
-          "content": "1 %复制信息#% 打开团App http:/💰geNzcwYTY5NjU💰领",
-          "icon": "meituan/meituan.png"
-        },
+        },        
         {
           "id": "meituan-12",
           "title": "美团景点门票",
@@ -135,6 +135,15 @@
         },
         {
           "id": "meituan-15",
+          "title": "酒店囤货节",
+          "description": "每日最高可领350元券",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/Sv3J94Kz",
+          "icon": "meituan/mtminsu.png"
+        },
+        {
+          "id": "meituan-16",
           "title": "吃喝玩乐全品类好货",
           "description": "66元红包免费领！",
           "type": "link",
@@ -143,16 +152,25 @@
           "icon": "meituan/mtlogo.png"
         },
         {
-          "id": "meituan-16",
+          "id": "meituan-17",
           "title": "美团买药",
           "description": "美团买药天天低价，不止5折",
           "type": "link",
           "action": "立即领取",
           "url": "http://dpurl.cn/OI42IMAz",
           "icon": "meituan/mtmy.png"
-        },       
+        }, 
         {
-          "id": "meituan-17",
+          "id": "meituan-18",
+          "title": "夏季变美",
+          "description": "美容美体/spa/口腔等，低至1折",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/lQka4Eyz",
+          "icon": "meituan/mtlogo.png"
+        },             
+        {
+          "id": "meituan-19",
           "title": "济南特惠-深折好货",
           "description": "济南本地爆品，库存有限。",
           "type": "link",
