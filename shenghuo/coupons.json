@@ -4,6 +4,34 @@
   "icon": "shenghuo/shenghuo.jpeg",
   "sections": [
     {
+      "title": "大牌点餐",
+      "coupons": [
+        {
+          "id": "food-1",
+          "title": "大牌点餐优惠",
+          "description": "麦当劳、肯德基、星巴克...",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://qf.jfshou.cn/unions//link/vKxnHPsJIm5zhmgO3RIKQuReoivdYQ",
+          "icon": "shenghuo/food.png"
+        }
+      ]
+    },
+    {
+      "title": "电影票",
+      "coupons": [
+        {
+          "id": "movie-1",
+          "title": "电影票优惠",
+          "description": "看电影超省钱，全国通用",
+          "type": "link",
+          "action": "立即领取",
+          "url": "https://qf.jfshou.cn/unions//link/rkxPki6u3WbLVDTO4wPU3QgJNbhISd",
+          "icon": "shenghuo/movie.png"
+        }
+      ]
+    },
+    {
       "title": "寄快递",
       "coupons": [
         {
@@ -46,34 +74,6 @@
           "action": "立即领取",
           "url": "https://qf.jfshou.cn/unions//link/1ZfmbPKbD70BsMpNMAeOuNx4R6xl6k",
           "icon": "shenghuo/t3.png"
-        }
-      ]
-    },
-    {
-      "title": "电影票",
-      "coupons": [
-        {
-          "id": "movie-1",
-          "title": "电影票优惠",
-          "description": "看电影超省钱，全国通用",
-          "type": "link",
-          "action": "立即领取",
-          "url": "https://qf.jfshou.cn/unions//link/rkxPki6u3WbLVDTO4wPU3QgJNbhISd",
-          "icon": "shenghuo/movie.png"
-        }
-      ]
-    },
-    {
-      "title": "大牌点餐",
-      "coupons": [
-        {
-          "id": "food-1",
-          "title": "大牌点餐优惠",
-          "description": "麦当劳、肯德基、星巴克...",
-          "type": "link",
-          "action": "立即领取",
-          "url": "https://qf.jfshou.cn/unions//link/vKxnHPsJIm5zhmgO3RIKQuReoivdYQ",
-          "icon": "shenghuo/food.png"
         }
       ]
     }

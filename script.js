@@ -17,6 +17,9 @@ function openPlatform(evt, platformName) {
 
   // 4. 给当前点击的标签按钮添加"active"激活状态
   evt.currentTarget.className += " active";
+
+  // 新增：切换平台后滚动到页面顶部
+  window.scrollTo({ top: 0, behavior: 'auto' });
 }
 
 // 一键复制功能
