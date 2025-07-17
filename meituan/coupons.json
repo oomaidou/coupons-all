@@ -162,20 +162,38 @@
         }, 
         {
           "id": "meituan-18",
-          "title": "夏季变美",
+          "title": "美团水果专场",
+          "description": "领水果神券99-30/69-25",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/huSIdopz",
+          "icon": "meituan/mtlogo.png"
+        },             
+        {
+          "id": "meituan-19",
+          "title": "美团按摩洗牙",
           "description": "美容美体/spa/口腔等，低至1折",
           "type": "link",
           "action": "立即领取",
           "url": "http://dpurl.cn/lQka4Eyz",
           "icon": "meituan/mtlogo.png"
-        },             
+        },
         {
-          "id": "meituan-19",
-          "title": "济南特惠-深折好货",
-          "description": "济南本地爆品，库存有限。",
+          "id": "meituan-20",
+          "title": "美团洗衣保洁",
+          "description": "洗衣保洁全场9.9元/件起",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/SuYXTsqz",
+          "url": "http://dpurl.cn/LsKmRkuz",
+          "icon": "meituan/mtlogo.png"
+        },                          
+        {
+          "id": "meituan-21",
+          "title": "美团闪购-鲜花专场",
+          "description": "鲜花3折起，领券满98减7元。",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/Rp8zaouz",
           "icon": "meituan/mtlogo.png"
         }
       ]
