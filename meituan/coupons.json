@@ -195,6 +195,15 @@
           "action": "立即领取",
           "url": "http://dpurl.cn/Rp8zaouz",
           "icon": "meituan/xianhua.png"
+        },
+        {
+          "id": "meituan-22",
+          "title": "美团闪购-屈臣氏专场",
+          "description": "满199-120，满299-160",
+          "type": "link",
+          "action": "立即领取",
+          "url": "http://dpurl.cn/CNiDW4kz",
+          "icon": "meituan/meituan.png"
         }
       ]
     }
