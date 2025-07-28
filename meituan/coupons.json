@@ -129,7 +129,7 @@
           "description": "200元无门槛券！请复制后，在微信中粘贴使用。",
           "type": "copy",
           "action": "一键复制",
-          "content": "#小程序://美团/外卖团购特价美食酒店电影/民宿大促销/XpwQfhtLpu6Pluq",
+          "content": "#小程序://美团/外卖团购特价美食酒店电影/民宿大促销/K2syUwSX8u1bfry",
           "dataType": "wxapp",
           "icon": "meituan/mtminsu.png"
         },
@@ -195,15 +195,6 @@
           "action": "立即领取",
           "url": "http://dpurl.cn/Rp8zaouz",
           "icon": "meituan/xianhua.png"
-        },
-        {
-          "id": "meituan-22",
-          "title": "美团闪购-屈臣氏专场",
-          "description": "满199-120，满299-160",
-          "type": "link",
-          "action": "立即领取",
-          "url": "http://dpurl.cn/CNiDW4kz",
-          "icon": "meituan/meituan.png"
         }
       ]
     }
