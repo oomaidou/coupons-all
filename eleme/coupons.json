@@ -34,6 +34,15 @@
           "icon": "eleme/shangou.png"
         },
         {
+          "id": "eleme-15",
+          "title": "秋奶6.7-爆品好价",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "38￥ HU287 nugz46rgAe1￥",
+          "icon": "eleme/shangou.png"
+        },
+        {
           "id": "eleme-4",
           "title": "饿了么外卖红包",
           "description": "复制后，去淘宝app领。",
