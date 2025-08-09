@@ -17,6 +17,15 @@
         },
         {
           "id": "eleme-2",
+          "title": "淘宝闪购-叠红包",
+          "description": "复制后，去淘宝app领。",
+          "type": "copy",
+          "action": "一键复制",
+          "content": "￥rVQA4fM56Sk￥/ HU7405",
+          "icon": "eleme/shangou.png"
+        },
+        {
+          "id": "eleme-3",
           "title": "闪购一下免单福利",
           "description": "复制后，去淘宝app领。",
           "type": "copy",
@@ -25,16 +34,16 @@
           "icon": "eleme/shangou.png"
         },
         {
-          "id": "eleme-3",
+          "id": "eleme-4",
           "title": "淘宝闪购-爆品好价",
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
           "content": "￥ZFc74fnDhM8￥/ HU7405",
           "icon": "eleme/shangou.png"
-        },
+        },       
         {
-          "id": "eleme-15",
+          "id": "eleme-5",
           "title": "秋奶6.7-爆品好价",
           "description": "复制后，去淘宝app领。",
           "type": "copy",
@@ -43,7 +52,7 @@
           "icon": "eleme/shangou.png"
         },
         {
-          "id": "eleme-4",
+          "id": "eleme-6",
           "title": "饿了么外卖红包",
           "description": "复制后，去淘宝app领。",
           "type": "copy",
@@ -52,7 +61,7 @@
           "icon": "eleme/shangou.png"
         },
         {
-          "id": "eleme-5",
+          "id": "eleme-7",
           "title": "红包天天领会场",
           "description": "复制后，去淘宝app领。",
           "type": "copy",
@@ -61,7 +70,7 @@
           "icon": "eleme/shangou.png"
         },
         {
-          "id": "eleme-6",
+          "id": "eleme-8",
           "title": "饿了么爆款单品",
           "description": "复制后，在微信中粘贴使用。",
           "type": "copy",
@@ -70,7 +79,7 @@
           "dataType": "wxapp"
         },
         {
-          "id": "eleme-7",
+          "id": "eleme-9",
           "title": "天天膨胀18.8元",
           "description": "复制后，在微信中粘贴使用。",
           "type": "copy",
@@ -79,7 +88,7 @@
           "dataType": "wxapp"
         },
         {
-          "id": "eleme-8",
+          "id": "eleme-10",
           "title": "囤券券真省钱",
           "description": "餐饮券可囤可配送，过期自动退",
           "type": "copy",
@@ -88,7 +97,7 @@
           "dataType": "wxapp"
         },
         {
-          "id": "eleme-9",
+          "id": "eleme-11",
           "title": "饿了么地铁商圈红包",
           "description": "地铁附近商圈、红包领不停",
           "type": "copy",
@@ -97,25 +106,16 @@
           "dataType": "wxapp"
         },
         {
-          "id": "eleme-10",
+          "id": "eleme-12",
           "title": "淘宝闪购-天天红包",
           "description": "复制后，去淘宝app领。",
           "type": "copy",
           "action": "一键复制",
           "content": "￥seiK4fMeoIH￥/ HU7405",
           "icon": "eleme/shangou.png"
-        },
+        },        
         {
-          "id": "eleme-11",
-          "title": "淘宝闪购品牌日",
-          "description": "复制后，去淘宝app领。",
-          "type": "copy",
-          "action": "一键复制",
-          "content": "￥rVQA4fM56Sk￥/ HU7405",
-          "icon": "eleme/shangou.png"
-        },
-        {
-          "id": "eleme-12",
+          "id": "eleme-13",
           "title": "社群限量福利",
           "description": "复制后，去淘宝app领。",
           "type": "copy",
@@ -124,7 +124,7 @@
           "icon": "eleme/shangou.png"
         },
         {
-          "id": "eleme-13",
+          "id": "eleme-14",
           "title": "全国超市便利活动",
           "description": "复制后，去淘宝app领。",
           "type": "copy",
@@ -133,7 +133,7 @@
           "icon": "eleme/shangou.png"
         },
         {
-          "id": "eleme-14",
+          "id": "eleme-15",
           "title": "医药全国门店活动",
           "description": "复制后，去淘宝app领。",
           "type": "copy",
