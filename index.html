@@ -2,11 +2,17 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="x5-page-mode" content="app">
+    <meta name="browsermode" content="application">
     <title>每日优惠券合集 - 美团、饿了么、京东等平台优惠券一站领取</title>
     <meta name="description" content="每日更新美团、饿了么、京东等主流平台优惠券，红包、外卖、生活服务一站领取，省钱更轻松。">
     <meta name="keywords" content="优惠券,美团,饿了么,京东,外卖红包,生活服务,省钱,每日更新">
     <link rel="stylesheet" href="style.css">
+    <!-- 预加载关键资源 -->
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="coupon-renderer.js" as="script">
 </head>
 <body>
 
@@ -45,17 +51,136 @@
         <p>优惠信息每日更新</p>
     </footer>
 
+    <!-- 错误处理和兼容性检测 -->
+    <script>
+    // 全局错误处理
+    window.onerror = function(msg, url, lineNo, columnNo, error) {
+        console.error('页面错误:', {msg, url, lineNo, columnNo, error});
+        return false;
+    };
+
+    // Promise错误处理
+    window.addEventListener('unhandledrejection', function(event) {
+        console.error('Promise错误:', event.reason);
+    });
+
+    // 检测微信浏览器
+    function isWechatBrowser() {
+        return /micromessenger/i.test(navigator.userAgent);
+    }
+
+    // 检测是否支持fetch
+    if (!window.fetch) {
+        // Fetch polyfill for older browsers
+        window.fetch = function(url) {
+            return new Promise(function(resolve, reject) {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', url);
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        resolve({
+                            json: function() {
+                                return Promise.resolve(JSON.parse(xhr.responseText));
+                            }
+                        });
+                    } else {
+                        reject(new Error('HTTP ' + xhr.status));
+                    }
+                };
+                xhr.onerror = function() {
+                    reject(new Error('Network Error'));
+                };
+                xhr.send();
+            });
+        };
+    }
+
+    // 检测是否支持Promise
+    if (!window.Promise) {
+        // 简单的Promise polyfill
+        window.Promise = function(executor) {
+            var self = this;
+            self.state = 'pending';
+            self.value = undefined;
+            self.handlers = [];
+
+            function resolve(result) {
+                if (self.state === 'pending') {
+                    self.state = 'resolved';
+                    self.value = result;
+                    self.handlers.forEach(handle);
+                }
+            }
+
+            function reject(error) {
+                if (self.state === 'pending') {
+                    self.state = 'rejected';
+                    self.value = error;
+                    self.handlers.forEach(handle);
+                }
+            }
+
+            function handle(handler) {
+                if (self.state === 'pending') {
+                    self.handlers.push(handler);
+                } else {
+                    if (self.state === 'resolved' && handler.onResolve) {
+                        handler.onResolve(self.value);
+                    }
+                    if (self.state === 'rejected' && handler.onReject) {
+                        handler.onReject(self.value);
+                    }
+                }
+            }
+
+            self.then = function(onResolve, onReject) {
+                return new Promise(function(resolve, reject) {
+                    handle({
+                        onResolve: function(result) {
+                            try {
+                                resolve(onResolve ? onResolve(result) : result);
+                            } catch (ex) {
+                                reject(ex);
+                            }
+                        },
+                        onReject: function(error) {
+                            try {
+                                resolve(onReject ? onReject(error) : error);
+                            } catch (ex) {
+                                reject(ex);
+                            }
+                        }
+                    });
+                });
+            };
+
+            executor(resolve, reject);
+        };
+
+        Promise.resolve = function(value) {
+            return new Promise(function(resolve) {
+                resolve(value);
+            });
+        };
+    }
+    </script>
+
     <script src="script.js"></script>
     <script src="coupon-renderer.js"></script>
+    
     <!-- 百度统计代码开始 -->
     <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?3590186a50e36acca5884200131b6f07";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
+    try {
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?3590186a50e36acca5884200131b6f07";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    } catch(e) {
+        console.log('统计代码加载失败:', e);
+    }
     </script>
     <!-- 百度统计代码结束 -->
 </body>

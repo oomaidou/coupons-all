@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>兼容性测试</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-item { margin: 10px 0; padding: 10px; border: 1px solid #ddd; }
+        .success { background-color: #d4edda; }
+        .error { background-color: #f8d7da; }
+    </style>
+</head>
+<body>
+    <h1>浏览器兼容性测试</h1>
+    <div id="test-results"></div>
+    
+    <script>
+        var results = [];
+        
+        function addTest(name, passed) {
+            results.push({
+                name: name,
+                passed: passed
+            });
+        }
+        
+        // 测试基本API支持
+        addTest('document.querySelector', typeof document.querySelector === 'function');
+        addTest('JSON.parse', typeof JSON.parse === 'function');
+        addTest('console.error', typeof console.error === 'function');
+        addTest('Promise', typeof Promise !== 'undefined');
+        addTest('fetch', typeof fetch !== 'undefined');
+        addTest('navigator.clipboard', typeof navigator.clipboard !== 'undefined');
+        addTest('document.execCommand', typeof document.execCommand === 'function');
+        
+        // 检测微信浏览器
+        var isWechat = /micromessenger/i.test(navigator.userAgent);
+        addTest('微信浏览器', isWechat);
+        
+        // 显示结果
+        var container = document.getElementById('test-results');
+        var html = '<h2>用户代理: ' + navigator.userAgent + '</h2>';
+        
+        for (var i = 0; i < results.length; i++) {
+            var test = results[i];
+            var className = test.passed ? 'success' : 'error';
+            var status = test.passed ? '✓ 支持' : '✗ 不支持';
+            html += '<div class="test-item ' + className + '">';
+            html += '<strong>' + test.name + '</strong>: ' + status;
+            html += '</div>';
+        }
+        
+        container.innerHTML = html;
+    </script>
+</body>
+</html>
