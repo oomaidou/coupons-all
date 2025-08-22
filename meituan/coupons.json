@@ -30,7 +30,7 @@
           "description": "天天可领，可叠加使用！",
           "type": "link",
           "action": "立即领取",
-          "url": "http://dpurl.cn/F3wlQKlz",
+          "url": "http://dpurl.cn/i3nNWMUz",
           "icon": "meituan/meituan.png"
         },
         {
@@ -50,15 +50,6 @@
           "action": "立即领取",
           "url": "http://dpurl.cn/rQYIJBvz",
           "icon": "meituan/shenquan.png"
-        },
-        {
-          "id": "meituan-5",
-          "title": "美团外卖品质店",
-          "description": "外卖也要吃好的！",
-          "type": "link",
-          "action": "立即领取",
-          "url": "http://dpurl.cn/XRF4Xkdz",
-          "icon": "meituan/pinzhi.png"
         },
         {
           "id": "meituan-6",
@@ -138,7 +129,7 @@
           "description": "200元无门槛券！请复制后，在微信中粘贴使用。",
           "type": "copy",
           "action": "一键复制",
-          "content": "#小程序://美团/外卖团购特价美食酒店电影/民宿大促销/k76aTG2oQf45v5I",
+          "content": "#小程序://美团/外卖团购特价美食酒店电影/民宿大促销/ES3k5znm7eO2yeB",
           "dataType": "wxapp",
           "icon": "meituan/mtminsu.png"
         },
