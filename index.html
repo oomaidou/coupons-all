@@ -6,13 +6,62 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="x5-page-mode" content="app">
     <meta name="browsermode" content="application">
+    
+    <!-- 基础SEO -->
     <title>每日优惠券合集 - 美团、饿了么、京东等平台优惠券一站领取</title>
-    <meta name="description" content="每日更新美团、饿了么、京东等主流平台优惠券，红包、外卖、生活服务一站领取，省钱更轻松。">
-    <meta name="keywords" content="优惠券,美团,饿了么,京东,外卖红包,生活服务,省钱,每日更新">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="每日更新美团、饿了么、京东等主流平台优惠券，红包、外卖、生活服务一站领取，省钱更轻松。最新优惠券、红包、满减券实时更新。">
+    <meta name="keywords" content="优惠券,美团优惠券,饿了么优惠券,京东优惠券,外卖红包,生活服务优惠券,省钱,每日更新,免费优惠券,红包领取">
+    <meta name="author" content="优惠券合集">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://oomaidou.github.io/coupons-all/">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="每日优惠券合集 - 美团、饿了么、京东等平台优惠券一站领取">
+    <meta property="og:description" content="每日更新美团、饿了么、京东等主流平台优惠券，红包、外卖、生活服务一站领取，省钱更轻松。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oomaidou.github.io/coupons-all/">
+    <meta property="og:image" content="https://oomaidou.github.io/coupons-all/meituan/meituan.png">
+    <meta property="og:site_name" content="优惠券合集">
+    <meta property="og:locale" content="zh_CN">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="每日优惠券合集 - 美团、饿了么、京东等平台优惠券一站领取">
+    <meta name="twitter:description" content="每日更新美团、饿了么、京东等主流平台优惠券，红包、外卖、生活服务一站领取，省钱更轻松。">
+    <meta name="twitter:image" content="https://oomaidou.github.io/coupons-all/meituan/meituan.png">
+    
+    <!-- 移动端优化 -->
+    <meta name="theme-color" content="#ff6b35">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="优惠券合集">
+    
     <!-- 预加载关键资源 -->
     <link rel="preload" href="script.js" as="script">
     <link rel="preload" href="coupon-renderer.js" as="script">
+    <link rel="preload" href="style.css" as="style">
+    
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "每日优惠券合集",
+      "description": "每日更新美团、饿了么、京东等主流平台优惠券，红包、外卖、生活服务一站领取，省钱更轻松。",
+      "url": "https://oomaidou.github.io/coupons-all/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://oomaidou.github.io/coupons-all/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "优惠券合集"
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -20,6 +69,8 @@
         <h1>每日优惠精选</h1>
         <p>为您聚合全网热门优惠券</p>
     </header>
+    
+
 
     <div class="tabs">
         <div class="tab-link active" onclick="openPlatform(event, 'meituan')">
@@ -50,6 +101,36 @@
     <footer>
         <p>优惠信息每日更新</p>
     </footer>
+    
+    <!-- SEO内容区域 - 对用户隐藏但对搜索引擎可见 -->
+    <div class="seo-content" style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; padding: 1rem; background: #f9f9f9; margin: 1rem 0; border-radius: 8px; font-size: 0.9rem; color: #666;">
+        <h2 style="color: #333; margin-bottom: 1rem; font-size: 1.2rem;">优惠券合集 - 美团、饿了么、京东等平台优惠券免费领取</h2>
+        <p style="line-height: 1.6; color: #666; margin-bottom: 1rem;">
+            我们为您精选美团、饿了么、京东等主流平台的最新优惠券，包括外卖红包、满减券、新人专享券等。每日更新，确保优惠信息的时效性，让您享受更多优惠。
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.5rem; margin-top: 1rem;">
+            <div style="background: white; padding: 0.5rem; border-radius: 4px; border-left: 3px solid #ff6b35;">
+                <h3 style="margin: 0 0 0.3rem 0; color: #ff6b35; font-size: 1rem;">美团优惠券</h3>
+                <p style="margin: 0; font-size: 0.8rem; color: #666;">外卖红包、满减券、新人专享券</p>
+                <a href="meituan/" style="color: #ff6b35; text-decoration: none; font-size: 0.8rem;">查看详情 →</a>
+            </div>
+            <div style="background: white; padding: 0.5rem; border-radius: 4px; border-left: 3px solid #2395ff;">
+                <h3 style="margin: 0 0 0.3rem 0; color: #2395ff; font-size: 1rem;">饿了么优惠券</h3>
+                <p style="margin: 0; font-size: 0.8rem; color: #666;">外卖红包、满减券、新人专享券</p>
+                <a href="eleme/" style="color: #2395ff; text-decoration: none; font-size: 0.8rem;">查看详情 →</a>
+            </div>
+            <div style="background: white; padding: 0.5rem; border-radius: 4px; border-left: 3px solid #e1251b;">
+                <h3 style="margin: 0 0 0.3rem 0; color: #e1251b; font-size: 1rem;">京东优惠券</h3>
+                <p style="margin: 0; font-size: 0.8rem; color: #666;">购物券、满减券、新人专享券</p>
+                <a href="jingdong/" style="color: #e1251b; text-decoration: none; font-size: 0.8rem;">查看详情 →</a>
+            </div>
+            <div style="background: white; padding: 0.5rem; border-radius: 4px; border-left: 3px solid #4caf50;">
+                <h3 style="margin: 0 0 0.3rem 0; color: #4caf50; font-size: 1rem;">生活服务优惠券</h3>
+                <p style="margin: 0; font-size: 0.8rem; color: #666;">滴滴、电影票、酒店等优惠券</p>
+                <a href="shenghuo/" style="color: #4caf50; text-decoration: none; font-size: 0.8rem;">查看详情 →</a>
+            </div>
+        </div>
+    </div>
 
     <!-- 错误处理和兼容性检测 -->
     <script>
