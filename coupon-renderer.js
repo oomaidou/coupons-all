@@ -153,14 +153,16 @@ CouponRenderer.prototype.init = function() {
   renderNext();
 };
 
-// 页面加载完成后初始化
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', function() {
+// 页面加载完成后初始化（仅在主页时）
+if (!window.couponRendererInitialized) {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      var renderer = new CouponRenderer();
+      renderer.init();
+    });
+  } else {
+    // DOM已经加载完成
     var renderer = new CouponRenderer();
     renderer.init();
-  });
-} else {
-  // DOM已经加载完成
-  var renderer = new CouponRenderer();
-  renderer.init();
+  }
 }

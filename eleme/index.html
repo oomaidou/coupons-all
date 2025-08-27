@@ -135,6 +135,10 @@
     <script src="../script.js"></script>
     <script src="../coupon-renderer.js"></script>
     <script>
+        // 阻止自动初始化，避免加载其他平台数据
+        window.couponRendererInitialized = true;
+    </script>
+    <script>
         // 加载饿了么优惠券数据
         fetch('../eleme/coupons.json')
             .then(response => {
@@ -144,7 +148,35 @@
                 return response.json();
             })
             .then(data => {
-                renderCoupons(data, 'eleme-content');
+                // 使用正确的渲染函数
+                var renderer = new CouponRenderer();
+                var container = document.getElementById('eleme-content');
+                
+                var html = '<div class="platform-block">';
+                
+                // 修复图片路径 - 在独立页面中需要调整相对路径
+                var fixedIcon = data.icon.replace('eleme/', '../eleme/');
+                
+                // 渲染各个区域
+                for (var i = 0; i < data.sections.length; i++) {
+                    var section = data.sections[i];
+                    html += '<div class="regular-section">';
+                    html += '<h2>' + section.title + '</h2>';
+                    
+                    // 渲染该区域的所有优惠券
+                    for (var j = 0; j < section.coupons.length; j++) {
+                        var coupon = section.coupons[j];
+                        // 修复优惠券图片路径
+                        if (coupon.icon) {
+                            coupon.icon = coupon.icon.replace('eleme/', '../eleme/');
+                        }
+                        html += renderer.renderCouponCard(coupon, fixedIcon);
+                    }
+                    html += '</div>';
+                }
+                
+                html += '</div>';
+                container.innerHTML = html;
             })
             .catch(error => {
                 console.error('加载饿了么优惠券失败:', error);
