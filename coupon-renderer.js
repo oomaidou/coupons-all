@@ -14,6 +14,11 @@ function CouponRenderer() {
 CouponRenderer.prototype.renderPlatform = function(platform) {
   var self = this;
   try {
+    // 检查是否在独立页面中，如果是则跳过
+    if (window.couponRendererInitialized) {
+      return;
+    }
+    
     // 使用polyfill后的fetch或XHR
     fetch(platform + '/coupons.json').then(function(response) {
       return response.json();
@@ -103,6 +108,11 @@ CouponRenderer.prototype.renderCouponCard = function(coupon, iconPath) {
  */
 CouponRenderer.prototype.renderTop = function(jsonPath, topDivId) {
   try {
+    // 检查是否在独立页面中，如果是则跳过
+    if (window.couponRendererInitialized) {
+      return;
+    }
+    
     fetch(jsonPath).then(function(response) {
       return response.json();
     }).then(function(data) {
