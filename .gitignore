@@ -32,6 +32,9 @@ Thumbs.db
 .env
 .env.local
 
+# 本地 AI 开发说明，不上传网站仓库
+CLAUDE.md
+
 # 测试文件
 compatibility-test.html
 
